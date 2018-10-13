@@ -9,11 +9,13 @@ class pagesController extends Controller
 
     public function index()
     {
-        return view('pages.index');
+        $title= "Latest Posts";
+        return view('pages.index')->with('title', $title);
 
     }
     public function about()
     {
-        return view('pages.about');
+        $title= "About Us";
+        return view('pages.about')->with('title', $title);
     }
 }
