@@ -8,7 +8,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Post extends Model
 {
     use SoftDeletes;
-    protected $fillable=['title',  'category_id', 'order'];
+
+    protected $table= 'posts';
+
+
+    public $fillable=['title',  'category_id', 'order'];
+    public $timestamps = true;
 
     public function category()
     {
