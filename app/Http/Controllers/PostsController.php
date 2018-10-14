@@ -23,7 +23,12 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        Post::create([
+            'body' => request('body'),
+            'title' => request('title'),
+            'user_id' => Auth::user()->id,
+            ]
+        );
     }
 
     /**

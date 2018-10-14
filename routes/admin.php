@@ -2,4 +2,5 @@
 
 Route::get('/', function () {
     return 'Admin!';
-});
+    }
+ );
