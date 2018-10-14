@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+
+<header class="blog-header py-3">
+    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{ config('app.name', 'BlogApp') }}
@@ -13,8 +15,19 @@
 
                 </ul>
 
+
+
+
+
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
+                    <li>
+                       <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <!--<li><p> </p> </li>-->
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
@@ -44,13 +57,12 @@
                             </div>
                         </li>
                     @endguest
-                   <li>
-                       <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
+</header>
+
+
+
