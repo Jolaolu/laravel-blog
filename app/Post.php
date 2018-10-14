@@ -13,6 +13,7 @@ class Post extends Model
 
 
     public $fillable=['title', 'body', 'category_id', ];
+    public $timestamps = true;
 
     public function category()
     {

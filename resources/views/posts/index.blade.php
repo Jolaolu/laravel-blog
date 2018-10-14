@@ -1,4 +1,4 @@
-@extends('layouts.app');
+@extends('layouts.app')
 
 @section('content')
     <h2>Posts</h2>
@@ -12,4 +12,4 @@
     @else
             <p>No post found</p>
      @endif
-@endsection;
+@endsection
