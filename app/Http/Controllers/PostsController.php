@@ -26,7 +26,6 @@ class PostsController extends Controller
         Post::create([
             'body' => request('body'),
             'title' => request('title'),
-            'user_id' => Auth::user()->id,
             ]
         );
     }

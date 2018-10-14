@@ -12,8 +12,7 @@ class Post extends Model
     protected $table= 'posts';
 
 
-    public $fillable=['title', 'body' ,'user_id' ,'category_id', 'order'];
-    public $timestamps = true;
+    public $fillable=['title', 'body', 'category_id', ];
 
     public function category()
     {
