@@ -1,4 +1,3 @@
-
 <header class="blog-header py-3">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
