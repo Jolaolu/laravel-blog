@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Post;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +14,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('posts.index');
+        $post = Post::all();
+        return view('posts.index')->with('posts', $post);
     }
 
     /**
@@ -23,11 +25,8 @@ class PostsController extends Controller
      */
     public function create()
     {
-        Post::create([
-            'body' => request('body'),
-            'title' => request('title'),
-            ]
-        );
+        return response()->json($post->paginate()->toArray());
+
     }
 
     /**
@@ -38,7 +37,12 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate(
+            [
+            'title' => 'required|string|between:1,50',
+            'content' => 'required|string|between:10,5000',
+            ]
+        );
     }
 
     /**
@@ -49,7 +53,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+
+        return response()->json($post->create($data)->toArray());
     }
 
     /**
