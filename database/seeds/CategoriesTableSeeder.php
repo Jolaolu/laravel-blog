@@ -11,14 +11,14 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-       /* $categories = ['Life','Reality', 'Opinions', 'Ngeria'];
+        $categories = ['Life','Reality', 'Opinions', 'Ngeria'];
 
         foreach ($categories as $category) {
-            Category::create (
+            Category::create(
                 [
-                $category,
+                'name'=>$category,
                 ]
             );
-        }*/
+        }
     }
 }
