@@ -9,18 +9,24 @@
                         </div>
 
                         <div class="panel-body">
-                            @if(count($posts)>1)
+                            @if(count($posts)>0)
                                 <ul class="list-group">
                                     @foreach ($posts as $post)
                                         <div class="well">
-                                           <li class="list-group-item">
-                                               <h3>{{$post->title}}</h3>
+                                            <br>
+                                            <li class="list-group-item">
+                                               <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a><br></h3>
+                                               <hr>
                                                 <small>Posted on {{$post->created_at}}.</small><br>
+                                                <small>Category: {{$post->category_id}}</small>
                                             </li>
                                         </div>
 
                                     @endforeach
+
                                 </ul>
+                                <br><br><br>
+                            {{$posts->links()}}
                         </div>
 
                             @else

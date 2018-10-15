@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Post;
 
 use Illuminate\Http\Request;
@@ -14,7 +15,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $post = Post::all();
+        // $post = Post::orderBy('title', 'desc')->get();
+        $post = Post::orderBy('title', 'desc')-> paginate(5);
         return view('posts.index')->with('posts', $post);
     }
 
@@ -39,8 +41,8 @@ class PostsController extends Controller
     {
         $data = $request->validate(
             [
-            'title' => 'required|string|between:1,50',
-            'content' => 'required|string|between:10,5000',
+                'title' => 'required|string|between:1,50',
+                'content' => 'required|string|between:10,5000',
             ]
         );
     }
@@ -54,7 +56,8 @@ class PostsController extends Controller
     public function show($id)
     {
 
-        return response()->json($post->create($data)->toArray());
+        $post = Post::find($id);
+        return view('posts.show')->with('post', $post);
     }
 
     /**
