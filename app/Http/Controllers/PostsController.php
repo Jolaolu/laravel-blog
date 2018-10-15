@@ -42,7 +42,7 @@ class PostsController extends Controller
         $data = $request->validate(
             [
                 'title' => 'required|string|between:1,50',
-                'content' => 'required|string|between:10,5000',
+                'body' => 'required|string|between:10,5000',
             ]
         );
     }
