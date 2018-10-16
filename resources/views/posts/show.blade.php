@@ -13,6 +13,8 @@
             <hr>
             <div>
             <small>Posted on {{$post->created_at}} in {{$post->category_id}}</small>
+            <hr>
+            <a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit Post</a>
             </div>
         </div>
     </div>

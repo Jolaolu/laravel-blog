@@ -11,7 +11,7 @@
          </div>
           <div class="form-group">
             {{Form::label('body', 'Body:', ['class'=> 'control-label'])}}
-            {{Form::textarea('body', ' ', ['class'=> 'form-control', 'placeholder'=> 'Post Body'])}}
+            {{Form::textarea('body', ' ', ['class'=> 'form-control', 'placeholder'=> 'Post Body', 'name '=> 'textarea'])}}
          </div><br><br>
          <span class="float-right">{{ Form::submit('Publish Post!',['class'=> 'btn btn-primary btn-lg'])}}</span>
     {!! Form::close() !!}
