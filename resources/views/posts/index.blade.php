@@ -5,7 +5,9 @@
 				<div class="col-md-10 col-md-offset-1">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-                             <h2>Posts</h2>
+
+                             <h2>Posts<span class="float-right"><a href="/home" class="btn btn-secondary" role="button">Return to Dashboard</a></span></h2>
+                             <hr>
                         </div>
 
                         <div class="panel-body">
@@ -39,6 +41,6 @@
     @endsection
 {{-- <footer class="footer">
     <div class="container">
-        <span class="text-muted">Made with ❤ by <a href="https://twitter.com/jola_adebayor">Anjolaoluwa</a>from 🇳🇬</span>
+        <span class="text-muted">Made with ❤ by <a href="https://twitter.com/jola_adebayor"> Anjolaoluwa</a>from 🇳🇬</span>
     </div>
 </footer> --}}
