@@ -13,8 +13,9 @@
             <hr>
             <div>
             <small>Posted on {{$post->created_at}} in {{$post->category_id}}</small>
-            <hr>
-            <a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit Post</a>
+            <hr><br><br>
+            <a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit Post</a>
+            <span class= "float-right"><a href="/posts/{{$post->id}}/delete" class="btn btn-primary">Delete Post</a></span>
             </div>
         </div>
     </div>
