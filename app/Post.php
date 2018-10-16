@@ -13,14 +13,15 @@ class Post extends Model
 
 
     public $fillable=['title', 'body', 'category_id', ];
+    public $primaryKey = 'id';
     public $timestamps = true;
 
-    public function category()
-    {
-        return $this->hasOne(Category::class);
-    }
+    // public function category()
+    // {
+    //     return $this->hasOne(Category::class);
+    // }
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo('App\User');
     }
 }
