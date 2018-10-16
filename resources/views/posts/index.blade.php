@@ -20,7 +20,7 @@
                                                <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a><br></h3>
                                                <hr>
                                                 <small>Posted on {{$post->created_at}}.</small><br>
-                                            <small>Category: {{$post->category_id}} by {{$post->user->name}}</small>
+                                            <small>Category: {{$post->category_id}} by {{$post->name}}</small>
                                             </li>
                                         </div>
 
