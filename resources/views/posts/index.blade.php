@@ -6,7 +6,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 
-                             <h2>Posts<span class="float-right"><a href="/home" class="btn btn-secondary" role="button">Return to Dashboard</a></span></h2>
+                             <h2>Posts</h2>{{-- <span class="float-right"><a href="/home" class="btn btn-secondary" role="button">Return to Dashboard</a></span> --}}
                              <hr>
                         </div>
 
