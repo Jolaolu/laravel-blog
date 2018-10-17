@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class pagesController extends Controller
 {
+    
 
     public function index()
     {

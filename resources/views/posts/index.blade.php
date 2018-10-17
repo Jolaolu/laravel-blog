@@ -5,17 +5,11 @@
 				<div class="col-md-10 col-md-offset-1">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-<<<<<<< HEAD
-                             <h2>Posts</h2>
-                        </div>
-
-=======
 
                              <h2>Posts</h2>{{-- <span class="float-right"><a href="/home" class="btn btn-secondary" role="button">Return to Dashboard</a></span> --}}
                              <hr>
                         </div>
 
->>>>>>> 81249e664c31dfecdf069984fcd44b11b1b6f9c7
                         <div class="panel-body">
                             @if(count($posts)>0)
                                 <ul class="list-group">
@@ -47,10 +41,6 @@
     @endsection
 {{-- <footer class="footer">
     <div class="container">
-<<<<<<< HEAD
-        <span class="text-muted">Made with ❤ by <a href="https://twitter.com/jola_adebayor">Anjolaoluwa</a>from 🇳🇬</span>
-=======
         <span class="text-muted">Made with ❤ by <a href="https://twitter.com/jola_adebayor"> Anjolaoluwa</a>from 🇳🇬</span>
->>>>>>> 81249e664c31dfecdf069984fcd44b11b1b6f9c7
     </div>
 </footer> --}}
