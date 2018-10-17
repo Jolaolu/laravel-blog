@@ -1,6 +1,14 @@
 ## About Project
+ Technical Assesment for a Job Opening
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Functionalities
+
+* Sign Upa nd Sign in
+* User can Create Posts
+* User can Edit posts
+* User can delete posts
+
+Read Post Without being logged in
 
 ```
 
