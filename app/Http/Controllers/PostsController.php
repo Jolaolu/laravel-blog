@@ -16,11 +16,7 @@ class PostsController extends Controller
     public function index()
     {
         // $post = Post::orderBy('title', 'desc')->get();
-<<<<<<< HEAD
-        $post = Post::orderBy('title', 'desc')-> paginate(5);
-=======
         $post = Post::orderBy('created_at', 'desc')-> paginate(5);
->>>>>>> 81249e664c31dfecdf069984fcd44b11b1b6f9c7
         return view('posts.index')->with('posts', $post);
     }
 
@@ -47,11 +43,7 @@ class PostsController extends Controller
             $request,
             [
                 'title' => 'required|string|between:1,50',
-<<<<<<< HEAD
-                'content' => 'required|string|between:10,5000',
-=======
                 'body' => 'required|string|between:10,5000',
->>>>>>> 81249e664c31dfecdf069984fcd44b11b1b6f9c7
             ]
         );
         $post = new Post;

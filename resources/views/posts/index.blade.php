@@ -26,11 +26,7 @@
                                                <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a><br></h3>
                                                <hr>
                                                 <small>Posted on {{$post->created_at}}.</small><br>
-<<<<<<< HEAD
-                                                <small>Category: {{$post->category_id}}</small>
-=======
                                             <small>Category: {{$post->category_id}} by {{$post->name}}</small>
->>>>>>> 81249e664c31dfecdf069984fcd44b11b1b6f9c7
                                             </li>
                                         </div>
 
