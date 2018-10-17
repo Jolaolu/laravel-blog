@@ -16,7 +16,11 @@ class PostsController extends Controller
     public function index()
     {
         // $post = Post::orderBy('title', 'desc')->get();
+<<<<<<< HEAD
         $post = Post::orderBy('title', 'desc')-> paginate(5);
+=======
+        $post = Post::orderBy('created_at', 'desc')-> paginate(5);
+>>>>>>> 81249e664c31dfecdf069984fcd44b11b1b6f9c7
         return view('posts.index')->with('posts', $post);
     }
 
@@ -27,7 +31,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return response()->json($post->paginate()->toArray());
+        return view('posts.create');
 
     }
 
@@ -39,12 +43,24 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->validate(
+        $this->validate(
+            $request,
             [
                 'title' => 'required|string|between:1,50',
+<<<<<<< HEAD
                 'content' => 'required|string|between:10,5000',
+=======
+                'body' => 'required|string|between:10,5000',
+>>>>>>> 81249e664c31dfecdf069984fcd44b11b1b6f9c7
             ]
         );
+        $post = new Post;
+        $post->title=  $request->input('title');
+        $post->body = $request->input('body');
+        $post->user_id = auth()->user()->id;
+        $post->save();
+
+        return redirect('/posts')-> with('success', 'Post Published');
     }
 
     /**
@@ -68,7 +84,8 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+        return view('posts.edit')->with('post', $post);
     }
 
     /**
@@ -80,7 +97,23 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+
+        $this->validate(
+            $request,
+            [
+                'title' => 'required|string|between:1,50',
+                'body' => 'required|string|between:10,5000',
+            ]
+        );
+        $post = new Post;
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->user_id = auth()->user()->id;
+
+        $post->save();
+
+        return redirect('/posts')->with('success', 'Post Updated');
     }
 
     /**
@@ -91,6 +124,11 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $post->delete();
+
+        return redirect('/posts')->with('success', 'Post Deleted');
     }
+
 }
+

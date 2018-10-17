@@ -22,10 +22,15 @@
     <body>
         <div id="app">
             @include('includes.navbar')
-
             <main class="py-4">
+                @include('includes.messages')
                 @yield('content')
             </main>
         </div>
+
+        <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace( 'article-ckeditor' );
+        </script>
     </body>
 </html>
