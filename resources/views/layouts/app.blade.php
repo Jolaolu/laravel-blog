@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -11,7 +12,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -28,9 +29,8 @@
             </main>
         </div>
 
-        {{-- <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
         <script>
-            CKEDITOR.replace( 'article-ckeditor' );
-        </script> --}}
+			CKEDITOR.replace( 'editor1' );
+		</script>
     </body>
 </html>
