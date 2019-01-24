@@ -9,7 +9,7 @@
             {{Form::label('title', 'Title:', ['class'=> 'control-label'])}}
             {{Form::text('title', $post->title , ['class'=> 'form-control', 'placeholder' => 'Post Title'])}}
          </div>
-          <div class="form-group">
+          <div class="form-group"></div>
             {{Form::label('body', 'Body:', ['class'=> 'control-label'])}}
             {{Form::textarea('body', $post->body , ['class'=> 'form-control', 'placeholder'=> 'Post Body',  ])}}
          </div><br><br>
