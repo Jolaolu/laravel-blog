@@ -1,14 +1,14 @@
 ## About Project
- Technical Assesment for a Job Opening
+
+Technical Assesment and my first laravel app
 
 ## Functionalities
 
-* Sign Upa nd Sign in
-* User can Create Posts
-* User can Edit posts
-* User can delete posts
-
-Read Post Without being logged in
+- Sign Upa nd Sign in
+- User can Create Posts
+- User can Edit posts
+- User can delete posts
+- Read Post Without being logged in
 
 ```
 
@@ -24,7 +24,9 @@ If you're not in the mood to read, [Laracasts](https://laracasts.com) contains o
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
+## Demo
 
+The demo to this app can be found in the [Heroku app](http://mylaravel-blog.herokuapp.com/).
 
 ## License
 
@@ -34,8 +36,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 This application could not have been built without resources such as
 
--   [Build a modern web application with Laravel and Vue](http://blog.pusher.com/web-application-laravel-vue-part-1) by [Neo Ighodaro](https://www.neoighodaro.com/)
+- [Build a modern web application with Laravel and Vue](http://blog.pusher.com/web-application-laravel-vue-part-1) by [Neo Ighodaro](https://www.neoighodaro.com/)
 
--   [Serving multiple apps with one Laravel codebase using subdomain routing](https://blog.pusher.com/laravel-subdomain-routing) by [Neo Ighodaro](https://www.neoighodaro.com/)
+- [Serving multiple apps with one Laravel codebase using subdomain routing](https://blog.pusher.com/laravel-subdomain-routing) by [Neo Ighodaro](https://www.neoighodaro.com/)
 
--   [Laravel from Scratch](https://www.youtube.com/watch?v=EU7PRmCpx-0&list=PLillGF-RfqbYhQsN5WMXy6VsDMKGadrJ-) by [Brad Tranversy](http://traversymedia.com)
+- [Laravel from Scratch](https://www.youtube.com/watch?v=EU7PRmCpx-0&list=PLillGF-RfqbYhQsN5WMXy6VsDMKGadrJ-) by [Brad Tranversy](http://traversymedia.com)
